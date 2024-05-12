@@ -18,5 +18,129 @@
     ></script>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body style="background-color: black"></body>
+  <body style="background-color: beige">
+    <!-- NavBar -->
+    <nav class="navbar bg-body-tertiary px-5">
+      <div class="col">
+        <div class="container-fluid">
+          <a class="navbar-brand fw-bold">Greens Coffee</a>
+        </div>
+      </div>
+      <div class="col">
+        <ul class="nav justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">About Us</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Images -->
+    <div class="container mt-4">
+      <div class="row">
+        <div class="col">
+          <img
+            class="image"
+            alt="Greens and coffee"
+            src="./images/Image1.avif"
+          />
+        </div>
+        <div class="col">
+          <img
+            class="image"
+            alt="Greens and coffee"
+            src="./images/Image2.avif"
+          />
+        </div>
+        <div class="col">
+          <img
+            class="image"
+            alt="Greens and coffee"
+            src="./images/Image3.avif"
+          />
+        </div>
+      </div>
+
+      <!-- Form -->
+      <div class="container container-form mt-4">
+        <div class="row">
+          <div
+            class="col"
+            style="
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+            "
+          >
+            <h1 class="fw-bold">Contact Us!</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
+              adipisci necessitatibus corrupti quos. Fuga assumenda quia
+              repudiandae autem quasi harum ex id neque ab cupiditate doloribus,
+              facilis cum earum similique.
+            </p>
+          </div>
+          <div class="col">
+            <form class="form">
+              <div class="row">
+                <div class="col">
+                  <div class="form-floating mb-3">
+                    <input
+                      type="First Name"
+                      class="form-control"
+                      id="floatingFirstName"
+                      placeholder="First Name"
+                    />
+                    <label for="floatingFirstName">First Name</label>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-floating mb-3">
+                    <input
+                      type="Last Name"
+                      class="form-control"
+                      id="floatingLastName"
+                      placeholder="Last Name"
+                    />
+                    <label for="floatingLastName">Last Name</label>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-floating mb-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="floatingEmail"
+                    placeholder="Email"
+                  />
+                  <label for="floatingEmail">Your Email</label>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-floating">
+                  <textarea
+                    class="form-control"
+                    placeholder="Leave a message here"
+                    id="floatingMessage"
+                    style="height: 100px"
+                  ></textarea>
+                  <label for="floatingMessage">Message</label>
+                </div>
+              </div>
+              <button class="btn btn-dark btn-md mt-3 py-2">
+                Send Inquiry
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
