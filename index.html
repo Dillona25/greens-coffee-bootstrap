@@ -17,139 +17,211 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body style="background-color: beige">
-    <!-- NavBar -->
-    <nav class="navbar bg-body-tertiary px-5">
-      <div class="col">
-        <div class="container-fluid">
-          <a class="navbar-brand fw-bold">Greens Coffee</a>
-        </div>
-      </div>
-      <div class="col">
-        <ul class="nav justify-content-end gap-3">
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#menu">Menu</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#about">About Us</a>
-          </li>
-          <li class="nav-item">
-            <button
-              class="btn btn-dark"
-              data-bs-toggle="modal"
-              data-bs-target="#modal"
-            >
-              Contact
-            </button>
-          </li>
-        </ul>
-      </div>
-    </nav>
-
-    <!-- Hero -->
-    <section class="container mt-5 mb-5">
-      <div class="row justify-content-between align-items-center">
-        <div class="col-5">
-          <h1 class="header mb-4">Greens Coffee</h1>
-          <p>
-            Welcome to our lush oasis, where the aroma of freshly brewed coffee
-            mingles with the scent of vibrant greenery, igniting your senses and
-            invigorating your mind. Here, amidst the tranquility of nature,
-            every sip of our carefully crafted brews becomes a catalyst for
-            productivity, inspiring creativity and fostering focus. Step into
-            our verdant sanctuary and let the synergy of caffeine and foliage
-            elevate your workday to new heights.
-          </p>
-          <button class="btn btn-dark px-3 py-2 mt-4">Get Started</button>
-        </div>
-        <div class="col-5 text-center">
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
           <img
-            alt="Coffee and Greens"
-            src="images/Image2.avif"
-            class="rounded-2"
+            alt="Greens Logo"
+            src="./images/GreensLogo.png"
+            class="nav-logo"
           />
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link fs-6 fw-semibold"
+                  aria-current="page"
+                  href="#menu"
+                  >Menu</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fs-6 fw-semibold" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link fs-6 fw-semibold"
+                  aria-current="page"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal"
+                  href="#"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </section>
+      </nav>
 
-    <section class="container-fluid bg-white py-5" id="menu">
-      <div class="container">
-        <h1 class="fs-1 fw-bold">Our Menu</h1>
-        <p>
-          We encourage that you hangout and be productive so we offer 2 refills
-          at half off!
-        </p>
-        <table class="table mt-5">
-          <thead class="table-success">
-            <tr>
-              <th>Drink</th>
-              <th>Size</th>
-              <th>Price</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Mocha</td>
-              <td>Medium</td>
-              <td>$5.99</td>
-            </tr>
-            <tr class="table-success">
-              <td>Iced Latte</td>
-              <td>Medium</td>
-              <td>$3.99</td>
-            </tr>
-            <tr>
-              <td>Vanilla Lotte</td>
-              <td>Medium</td>
-              <td>$4.99</td>
-            </tr>
-            <tr class="table-success">
-              <td>Redbull Infusion</td>
-              <td>Medium</td>
-              <td>$6.99</td>
-            </tr>
-            <tr>
-              <td>Carmelizer</td>
-              <td>Medium</td>
-              <td>$4.99</td>
-            </tr>
-            <tr class="table-success">
-              <td>Dark Coffee</td>
-              <td>Medium</td>
-              <td>$3.99</td>
-            </tr>
-            <tr>
-              <td>Peppermint Expresso</td>
-              <td>Medium</td>
-              <td>$5.99</td>
-            </tr>
-          </tbody>
-        </table>
+      <!-- Hero Section -->
+      <section class="hero-section">
+        <div class="hero container py-5">
+          <div class="hero-row row align-items-center justify-content-center">
+            <div class="hero-col col-12">
+              <h1 class="hero-title display-4 fw-semibold">
+                Where coffee meets greens
+              </h1>
+              <p>
+                Welcome to our lush oasis, where the aroma of freshly brewed
+                coffee mingles with the scent of vibrant greenery, igniting your
+                senses and invigorating your mind. Here, amidst the tranquility
+                of nature, every sip of our carefully crafted brews becomes a
+                catalyst for productivity, inspiring creativity and fostering
+                focus. Step into our verdant sanctuary and let the synergy of
+                caffeine and foliage elevate your workday to new heights.
+              </p>
+              <a
+                href="#menu"
+                class="hero-btn btn btn-dark px-5 py-3 d-inline-block"
+              >
+                Get Started
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <!-- Menu Section -->
+    <section class="container-fluid py-5" id="menu">
+      <div class="container column-gap-3">
+        <div class="row">
+          <h1
+            class="fw-semibold text-dark"
+            style="font-size: 50px; text-align: center"
+          >
+            Our Drink Menu
+          </h1>
+          <div class="row mx-auto mt-5">
+            <div class="col-12 col-md-4">
+              <img
+                alt="coffee image"
+                src="./images/CoffeeOne.jpeg"
+                class="img-fluid"
+              />
+            </div>
+            <div class="col-12 col-md-4">
+              <img
+                alt="coffee image"
+                src="./images/Coffee2.jpeg"
+                class="img-fluid"
+              />
+            </div>
+            <div class="col-12 col-md-4">
+              <img
+                alt="coffee image"
+                src="./images/Coffee3.jpeg"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+          <div class="col-12">
+            <table class="table mt-5">
+              <thead class="table-success">
+                <tr>
+                  <th>Drink</th>
+                  <th>Size</th>
+                  <th>Price</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Mocha</td>
+                  <td>Medium</td>
+                  <td>$5.99</td>
+                </tr>
+                <tr class="table-success">
+                  <td>Iced Latte</td>
+                  <td>Medium</td>
+                  <td>$3.99</td>
+                </tr>
+                <tr>
+                  <td>Vanilla Lotte</td>
+                  <td>Medium</td>
+                  <td>$4.99</td>
+                </tr>
+                <tr class="table-success">
+                  <td>Redbull Infusion</td>
+                  <td>Medium</td>
+                  <td>$6.99</td>
+                </tr>
+                <tr>
+                  <td>Carmelizer</td>
+                  <td>Medium</td>
+                  <td>$4.99</td>
+                </tr>
+                <tr class="table-success">
+                  <td>Dark Coffee</td>
+                  <td>Medium</td>
+                  <td>$3.99</td>
+                </tr>
+                <tr>
+                  <td>Peppermint Expresso</td>
+                  <td>Medium</td>
+                  <td>$5.99</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- About Section -->
-    <section class="container mt-5 mb-5" id="about">
-      <div class="row justify-content-between align-items-center">
-        <div class="col-5">
-          <h1 class="header mb-4">About Greens Coffee</h1>
-          <p>
-            Welcome to our lush oasis, where the aroma of freshly brewed coffee
-            mingles with the scent of vibrant greenery, igniting your senses and
-            invigorating your mind. Here, amidst the tranquility of nature,
-            every sip of our carefully crafted brews becomes a catalyst for
-            productivity, inspiring creativity and fostering focus. Step into
-            our verdant sanctuary and let the synergy of caffeine and foliage
-            elevate your workday to new heights.
-          </p>
-        </div>
-        <div class="col-5 text-center">
-          <img
-            alt="Coffee and Greens"
-            src="images/Image4.avif"
-            class="rounded-2"
-          />
+    <section class="bg-white" id="about">
+      <div class="container pt-5 pb-5">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-12 col-lg-6">
+            <img
+              alt="Coffee shop image"
+              src="./images/CoffeeShopAbout.png"
+              style="height: 500px; width: 500px"
+            />
+          </div>
+          <div class="col-12 col-lg-6 justify-content-center">
+            <h1 class="text-dark fw-semibold">About us</h1>
+            <p class="text-dark fs-6">
+              Step into our oasis nestled in the heart of Seattle, where the
+              crisp aroma of freshly brewed coffee intertwines harmoniously with
+              the lively essence of lush greenery. At Greens Coffee Shop, we
+              pride ourselves on offering more than just a cup of joe — we
+              provide an experience that rejuvenates both body and soul.
+              <br />
+              <br />
+              As you step through our doors, you'll be enveloped in the
+              tranquility of nature, creating the perfect backdrop for a moment
+              of relaxation or a burst of creativity. Each sip of our
+              meticulously crafted brews serves as a catalyst for productivity,
+              awakening your senses and fueling your passion.
+              <br />
+              <br />
+              Our verdant sanctuary is more than just a coffee shop; it's a
+              haven where the synergy of caffeine and foliage intertwine to
+              elevate your workday to new heights. Whether you're seeking a
+              quiet retreat to unwind or a vibrant space to spark inspiration,
+              Greens Coffee Shop welcomes you to indulge in a sensory journey
+              unlike any other.
+            </p>
+          </div>
         </div>
       </div>
     </section>
@@ -164,12 +236,14 @@
             style="position: absolute; top: 22px; right: 16px"
             data-bs-dismiss="modal"
           ></button>
-          <form>
+          <form method="post" action="email.php">
             <div class="row g-3">
               <div class="col">
                 <label for="First name">First Name</label>
                 <input
                   type="text"
+                  name="first name"
+                  id="first-name"
                   class="form-control"
                   aria-label="First name"
                 />
@@ -178,6 +252,8 @@
                 <label for="Last name">Last Name</label>
                 <input
                   type="text"
+                  name="last name"
+                  id="last-name"
                   class="form-control"
                   aria-label="Last name"
                 />
@@ -186,6 +262,8 @@
                 <label for="email">Your email</label>
                 <input
                   type="email"
+                  name="email"
+                  id="email"
                   class="form-control"
                   aria-label="Your Email"
                 />
@@ -194,6 +272,8 @@
                 <label for="message">Send us a message</label>
                 <textarea
                   type="text"
+                  name="message"
+                  id="message"
                   class="form-control"
                   aria-label="Your message"
                   style="height: 100px"
