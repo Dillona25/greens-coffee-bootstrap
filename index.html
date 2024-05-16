@@ -28,11 +28,9 @@
     <header>
       <nav class="navbar navbar-expand-lg">
         <div class="container">
-          <img
-            alt="Greens Logo"
-            src="./images/GreensLogo.png"
-            class="nav-logo"
-          />
+          <a class="navbar-brand fs-6 fw-semibold" aria-current="page"
+            >Greens Coffee</a
+          >
           <button
             class="navbar-toggler"
             type="button"
@@ -90,7 +88,7 @@
                 caffeine and foliage elevate your workday to new heights.
               </p>
               <a
-                href="#menu"
+                href="#special"
                 class="hero-btn btn btn-dark px-5 py-3 d-inline-block"
               >
                 Get Started
@@ -101,6 +99,33 @@
       </section>
     </header>
 
+    <!-- Special Section -->
+    <section class="bg-white pt-1 pb-5" id="special">
+      <div class="row mx-auto mt-5">
+        <div class="col-12 col-md-4">
+          <img
+            alt="coffee image"
+            src="./images/CoffeeOne.jpeg"
+            class="img-fluid"
+          />
+        </div>
+        <div class="col-12 col-md-4">
+          <img
+            alt="coffee image"
+            src="./images/Coffee2.jpeg"
+            class="img-fluid"
+          />
+        </div>
+        <div class="col-12 col-md-4">
+          <img
+            alt="coffee image"
+            src="./images/Coffee3.jpeg"
+            class="img-fluid"
+          />
+        </div>
+      </div>
+    </section>
+
     <!-- Menu Section -->
     <section class="container-fluid py-5" id="menu">
       <div class="container column-gap-3">
@@ -109,78 +134,107 @@
             class="fw-semibold text-dark"
             style="font-size: 50px; text-align: center"
           >
-            Our Drink Menu
+            Our Menus
           </h1>
-          <div class="row mx-auto mt-5">
-            <div class="col-12 col-md-4">
-              <img
-                alt="coffee image"
-                src="./images/CoffeeOne.jpeg"
-                class="img-fluid"
-              />
-            </div>
-            <div class="col-12 col-md-4">
-              <img
-                alt="coffee image"
-                src="./images/Coffee2.jpeg"
-                class="img-fluid"
-              />
-            </div>
-            <div class="col-12 col-md-4">
-              <img
-                alt="coffee image"
-                src="./images/Coffee3.jpeg"
-                class="img-fluid"
-              />
+          <div class="col-12 col-lg-6">
+            <div class="col-12 mt-4">
+              <table class="table">
+                <thead class="table-success">
+                  <tr>
+                    <th>Drink</th>
+                    <th>Size</th>
+                    <th>Price</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Mocha</td>
+                    <td>Medium</td>
+                    <td>$5.99</td>
+                  </tr>
+                  <tr class="table-success">
+                    <td>Iced Latte</td>
+                    <td>Medium</td>
+                    <td>$3.99</td>
+                  </tr>
+                  <tr>
+                    <td>Vanilla Lotte</td>
+                    <td>Medium</td>
+                    <td>$4.99</td>
+                  </tr>
+                  <tr class="table-success">
+                    <td>Redbull Infusion</td>
+                    <td>Medium</td>
+                    <td>$6.99</td>
+                  </tr>
+                  <tr>
+                    <td>Carmelizer</td>
+                    <td>Medium</td>
+                    <td>$4.99</td>
+                  </tr>
+                  <tr class="table-success">
+                    <td>Dark Coffee</td>
+                    <td>Medium</td>
+                    <td>$3.99</td>
+                  </tr>
+                  <tr>
+                    <td>Peppermint Expresso</td>
+                    <td>Medium</td>
+                    <td>$5.99</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
-          <div class="col-12">
-            <table class="table mt-5">
-              <thead class="table-success">
-                <tr>
-                  <th>Drink</th>
-                  <th>Size</th>
-                  <th>Price</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Mocha</td>
-                  <td>Medium</td>
-                  <td>$5.99</td>
-                </tr>
-                <tr class="table-success">
-                  <td>Iced Latte</td>
-                  <td>Medium</td>
-                  <td>$3.99</td>
-                </tr>
-                <tr>
-                  <td>Vanilla Lotte</td>
-                  <td>Medium</td>
-                  <td>$4.99</td>
-                </tr>
-                <tr class="table-success">
-                  <td>Redbull Infusion</td>
-                  <td>Medium</td>
-                  <td>$6.99</td>
-                </tr>
-                <tr>
-                  <td>Carmelizer</td>
-                  <td>Medium</td>
-                  <td>$4.99</td>
-                </tr>
-                <tr class="table-success">
-                  <td>Dark Coffee</td>
-                  <td>Medium</td>
-                  <td>$3.99</td>
-                </tr>
-                <tr>
-                  <td>Peppermint Expresso</td>
-                  <td>Medium</td>
-                  <td>$5.99</td>
-                </tr>
-              </tbody>
-            </table>
+          <div class="col-12 col-lg-6">
+            <div class="col-12 mt-4">
+              <table class="table">
+                <thead class="table-success">
+                  <tr>
+                    <th>Food</th>
+                    <th>Calories</th>
+                    <th>Price</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Egg Sandwhich</td>
+                    <td>430 Cal</td>
+                    <td>$5.99</td>
+                  </tr>
+                  <tr class="table-success">
+                    <td>Fruit Cup</td>
+                    <td>567 Cal</td>
+                    <td>$6.99</td>
+                  </tr>
+                  <tr>
+                    <td>Egg, Ham Sandwhich</td>
+                    <td>786</td>
+                    <td>$7.99</td>
+                  </tr>
+                  <tr class="table-success">
+                    <td>Cake Pop</td>
+                    <td>150</td>
+                    <td>$1.99</td>
+                  </tr>
+                  <tr>
+                    <td>Egg, Sausage Scramble</td>
+                    <td>1230 Cal</td>
+                    <td>$12.99</td>
+                  </tr>
+                  <tr class="table-success">
+                    <td>Fruit Pancakes</td>
+                    <td>923</td>
+                    <td>$10.99</td>
+                  </tr>
+                  <tr>
+                    <td>Lunch Meat Sandwhich</td>
+                    <td>475</td>
+                    <td>$5.99</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
       </div>
@@ -229,8 +283,8 @@
     <!-- Contact Modal -->
     <div class="modal fade" id="modal">
       <div class="modal-dialog modal-dialog-centered">
+        <h1>Lets Chat ☕️</h1>
         <div class="modal-content p-3">
-          <h1 class="mb-5 lh-sm">Get in touch</h1>
           <button
             class="btn-close"
             style="position: absolute; top: 22px; right: 16px"
@@ -279,7 +333,7 @@
                   style="height: 100px"
                 ></textarea>
                 <div class="d-grid gap-3">
-                  <button class="btn btn-dark mt-3" type="submit">
+                  <button class="modal-btn btn btn-dark mt-3" type="submit">
                     Send inquiry
                   </button>
                 </div>
